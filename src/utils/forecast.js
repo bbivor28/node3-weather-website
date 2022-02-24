@@ -27,8 +27,7 @@ const forecast = (lat,long, callback) => {
         }else if (response.body.error){
             callback('Unable to find forecast', undefined)
         }else {
-            callback(undefined, response.body.current.weather_descriptions[0]+ '. It is currently '+response.body.current.temperature+ 'degrees out. But I feel '+ response.body.current.feelslike+' degrees outside'
-            )
+            callback(undefined, response.body.current.weather_descriptions[0]+ '. It is currently '+response.body.current.temperature+ 'degrees out. But I feel '+ response.body.current.feelslike+' degrees outside. '+'Humidity is '+response.body.current.humidity+'%')
         }
     })
 }
