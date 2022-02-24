@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e)=>{
             console.log(data.error)
         }else {
             messageOne.textContent = data.location
-            messageTwo.textContent = data.forecast
+            messageTwo.textContent = data.forecastㅜㅐㅇ
             console.log(data.location)
             console.log(data.forecast)
         }
